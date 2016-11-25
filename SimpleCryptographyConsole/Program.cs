@@ -6,17 +6,13 @@ namespace SimpleCryptographyConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a passphrase:");
-            string passPhrase = Console.ReadLine();
+            string passPhrase = getUserContent("Please enter a passphrase:");
 
             StringCipherConsumer cipher = new StringCipherConsumer(passPhrase);
 
-            Console.WriteLine("Please enter your text:");
-            string userText = Console.ReadLine();
+            string userText = getUserContent("Please enter your text:");
 
             string encryptedString = cipher.Encrypt(userText);
-            Console.WriteLine("your encrypted text is:" +encryptedString);
-            Console.ReadLine();
 
             Console.WriteLine("Now lets decrypt this:" + encryptedString);
             Console.ReadLine();
