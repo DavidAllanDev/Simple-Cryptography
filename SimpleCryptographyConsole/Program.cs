@@ -21,7 +21,6 @@ namespace SimpleCryptographyConsole
             ShowContent("So the decrypted value is:" + cipher.Decrypt(encryptedString));
         }
 
-
         private static string getUserContent(string message)
         {
             Console.WriteLine(message);
