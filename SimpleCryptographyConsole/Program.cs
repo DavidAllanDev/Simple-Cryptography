@@ -14,10 +14,23 @@ namespace SimpleCryptographyConsole
 
             string encryptedString = cipher.Encrypt(userText);
 
-            Console.WriteLine("Now lets decrypt this:" + encryptedString);
-            Console.ReadLine();
+            ShowContent("your encrypted text is:" + encryptedString);
 
-            Console.WriteLine("So the decrypted value is:" + cipher.Decrypt(encryptedString));
+            ShowContent("Now lets decrypt this:" + encryptedString);
+
+            ShowContent("So the decrypted value is:" + cipher.Decrypt(encryptedString));
+        }
+
+
+        private static string getUserContent(string message)
+        {
+            Console.WriteLine(message);
+            return Console.ReadLine();
+        }
+
+        private static void ShowContent(string message)
+        {
+            Console.WriteLine(message);
             Console.ReadLine();
         }
     }
