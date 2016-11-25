@@ -8,12 +8,13 @@ namespace UnitTest_SimpleCryptography
         [TestMethod]
         public void canConsumerClassEncrypt()
         {
-            StringCipherConsumer cipher = new StringCipherConsumer();
-
-            string value = "David";
             string key = "Allan";
 
-            string encryptedString = cipher.Encrypt(value, key);
+            StringCipherConsumer cipher = new StringCipherConsumer(key);
+
+            string value = "David";
+
+            string encryptedString = cipher.Encrypt(value);
 
             Assert.AreNotEqual(value, encryptedString);
         }
@@ -21,14 +22,15 @@ namespace UnitTest_SimpleCryptography
         [TestMethod]
         public void canConsumerClassDecrypt()
         {
-            StringCipherConsumer cipher = new StringCipherConsumer();
-
-            string value = "David";
             string key = "Allan";
 
-            string encryptedString = cipher.Encrypt(value, key);
+            StringCipherConsumer cipher = new StringCipherConsumer(key);
 
-            string decryptedString = cipher.Decrypt(encryptedString, key);
+            string value = "David";
+
+            string encryptedString = cipher.Encrypt(value);
+
+            string decryptedString = cipher.Decrypt(encryptedString);
 
             Assert.AreEqual(value, decryptedString);
         }
