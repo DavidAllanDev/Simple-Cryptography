@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCryptography", "SimpleCryptography.csproj", "{332A5607-F677-4674-9ACD-8DCAA515E25A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCryptographyConsole", "..\SimpleCryptographyConsole\SimpleCryptographyConsole.csproj", "{47F8A109-AC3C-453C-90DE-B6F3CFDF5632}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTest_SimpleCryptography", "UnitTest_SimpleCryptography\UnitTest_SimpleCryptography.csproj", "{1DEAB7DF-2510-40B2-832E-4D07E61508E1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{332A5607-F677-4674-9ACD-8DCAA515E25A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332A5607-F677-4674-9ACD-8DCAA515E25A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332A5607-F677-4674-9ACD-8DCAA515E25A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332A5607-F677-4674-9ACD-8DCAA515E25A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47F8A109-AC3C-453C-90DE-B6F3CFDF5632}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F8A109-AC3C-453C-90DE-B6F3CFDF5632}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F8A109-AC3C-453C-90DE-B6F3CFDF5632}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F8A109-AC3C-453C-90DE-B6F3CFDF5632}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DEAB7DF-2510-40B2-832E-4D07E61508E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DEAB7DF-2510-40B2-832E-4D07E61508E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DEAB7DF-2510-40B2-832E-4D07E61508E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DEAB7DF-2510-40B2-832E-4D07E61508E1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

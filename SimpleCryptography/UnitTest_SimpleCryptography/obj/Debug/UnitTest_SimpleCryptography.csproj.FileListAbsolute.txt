@@ -1,0 +1,10 @@
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\UnitTest_SimpleCryptography.dll
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\UnitTest_SimpleCryptography.pdb
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\SimpleCryptography.dll
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\SimpleCryptography.pdb
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\obj\Debug\UnitTest_SimpleCryptography.csprojResolveAssemblyReference.cache
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\obj\Debug\UnitTest_SimpleCryptography.dll
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\obj\Debug\UnitTest_SimpleCryptography.pdb
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\SimpleCryptographyConsole.exe
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\SimpleCryptographyConsole.pdb
