@@ -3,6 +3,7 @@ using SimpleCryptographyConsole;
 
 namespace UnitTest_SimpleCryptography
 {
+    [TestClass]
     public class StringCipherConsumerTest
     {
         [TestMethod]
