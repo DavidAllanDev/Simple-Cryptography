@@ -23,7 +23,7 @@ namespace SimpleCryptography.Cryptography
             var saltStringBytes = GenerateRandomBits();
             var ivStringBytes = GenerateRandomBits();
             var plainTextBytes = Encoding.UTF8.GetBytes(FixedPassword + plainText);
-            var encryptor = new CipherEncriptor();
+            var encryptor = new CipherEncryptor();
 
             return encryptor.Encrypt(passPhrase, keysize, saltStringBytes, ivStringBytes, plainTextBytes, CalculateSize(keysize), Iterations);
         }
@@ -39,7 +39,7 @@ namespace SimpleCryptography.Cryptography
             var saltStringBytes = cipherTextBytesWithSaltAndIv.Take(CalculateSize(keysize)).ToArray();
             var ivStringBytes = cipherTextBytesWithSaltAndIv.Skip(CalculateSize(keysize)).Take(CalculateSize(keysize)).ToArray();
             var cipherTextBytes = cipherTextBytesWithSaltAndIv.Skip((CalculateSize(keysize)) * 2).Take(cipherTextBytesWithSaltAndIv.Length - ((CalculateSize(keysize)) * 2)).ToArray();
-            var decriptor = new CipherDecriptor();
+            var decriptor = new CipherDecryptor();
 
             return decriptor.Decrypt(passPhrase, keysize, saltStringBytes, ivStringBytes, cipherTextBytes, CalculateSize(keysize), Iterations).Replace(FixedPassword, "");
         }

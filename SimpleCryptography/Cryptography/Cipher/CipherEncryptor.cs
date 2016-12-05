@@ -5,16 +5,14 @@ using System.Security.Cryptography;
 
 namespace SimpleCryptography.Cryptography.Cipher
 {
-    public class CipherEncriptor : Cipher
+    public class CipherEncryptor : Cipher
     {
         public string Encrypt(string passPhrase, int keysize, byte[] saltStringBytes, byte[] ivStringBytes, byte[] plainTextBytes, int size, int iterations)
         {
-            var password = new Rfc2898DeriveBytes(passPhrase, saltStringBytes, iterations);
-            var keyBytes = password.GetBytes(size);
-
+            var keyBytes = GetKeyBytes(passPhrase, saltStringBytes, iterations, size);
             var encryptor = GenerateSymmetricKey(keysize).CreateEncryptor(keyBytes, ivStringBytes);
-            var memoryStream = new MemoryStream();
 
+            var memoryStream = new MemoryStream();
             var cryptoStream = new CryptoStream(memoryStream, encryptor, Writer);
 
             cryptoStream.Write(plainTextBytes, 0, plainTextBytes.Length);

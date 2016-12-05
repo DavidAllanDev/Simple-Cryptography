@@ -34,5 +34,11 @@ namespace SimpleCryptography.Cryptography.Cipher
             return symmetricKey;
         }
 
+        internal byte[] GetKeyBytes(string password, byte[] salt, int iterations, int size)
+        {
+            var derivedBytes = new Rfc2898DeriveBytes(password, salt, iterations);
+            return derivedBytes.GetBytes(size);
+        }
+
     }
 }

@@ -41,8 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cryptography\Cipher\Cipher.cs" />
-    <Compile Include="Cryptography\Cipher\CipherDecriptor.cs" />
-    <Compile Include="Cryptography\Cipher\CipherEncriptor.cs" />
+    <Compile Include="Cryptography\Cipher\CipherDecryptor.cs" />
+    <Compile Include="Cryptography\Cipher\CipherEncryptor.cs" />
     <Compile Include="Cryptography\Cryptogram.cs" />
     <Compile Include="Cryptography\IStringCipher.cs" />
     <Compile Include="Cryptography\StringCipher.cs" />
