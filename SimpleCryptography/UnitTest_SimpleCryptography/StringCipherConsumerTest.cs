@@ -7,6 +7,20 @@ namespace UnitTest_SimpleCryptography
     public class StringCipherConsumerTest
     {
         [TestMethod]
+        public void canConsumerClassEncryptWithNullKey()
+        {
+            string key = null;
+
+            StringCipherConsumer cipher = new StringCipherConsumer(key);
+
+            string value = "David";
+
+            string encryptedString = cipher.Encrypt(value);
+
+            Assert.AreNotEqual(value, encryptedString);
+        }
+
+        [TestMethod]
         public void canConsumerClassEncrypt()
         {
             string key = "Allan";

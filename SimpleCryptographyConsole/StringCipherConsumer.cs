@@ -13,7 +13,14 @@ namespace SimpleCryptographyConsole
 
         public string Encrypt(string plainText)
         {
-            return base.Encrypt(plainText);
+            try
+            {
+                return base.Encrypt(plainText);
+            }
+            catch
+            {
+                return plainText;
+            }
         }
 
         public string Decrypt(string cipherText)

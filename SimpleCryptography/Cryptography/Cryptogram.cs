@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography;
+using System;
 
 namespace SimpleCryptography.Cryptography
 {
@@ -21,6 +22,12 @@ namespace SimpleCryptography.Cryptography
         internal int CalculateSize(int Keysize = 128)
         {
             return Keysize / BaseByteSize;
+        }
+
+        internal void ValidateInputTex(string text)
+        {
+            if (string.IsNullOrEmpty(text))
+                throw new Exception("Is not a valid input text");
         }
     }
 }

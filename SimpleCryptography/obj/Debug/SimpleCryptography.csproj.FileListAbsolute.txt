@@ -2,3 +2,4 @@ C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\bin\Debug
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\bin\Debug\SimpleCryptography.pdb
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\obj\Debug\SimpleCryptography.dll
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\obj\Debug\SimpleCryptography.pdb
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\obj\Debug\SimpleCryptography.csprojResolveAssemblyReference.cache

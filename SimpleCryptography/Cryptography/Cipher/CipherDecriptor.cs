@@ -6,11 +6,6 @@ namespace SimpleCryptography.Cryptography.Cipher
 {
     public class CipherDecriptor
     {
-        private string _fixedPassword;
-        public CipherDecriptor(string FixedPassword)
-        {
-            _fixedPassword = FixedPassword;
-        }
         public string Decrypt(string passPhrase, int keysize, byte[] saltStringBytes, byte[] ivStringBytes, byte[] cipherTextBytes, int size, int iterations)
         {
             var password = new Rfc2898DeriveBytes(passPhrase, saltStringBytes, iterations);
@@ -30,7 +25,7 @@ namespace SimpleCryptography.Cryptography.Cipher
                     var decryptedByteCount = cryptoStream.Read(plainTextBytes, 0, plainTextBytes.Length);
                     memoryStream.Close();
 
-                    return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount).Replace(_fixedPassword, "");
+                    return Encoding.UTF8.GetString(plainTextBytes, 0, decryptedByteCount);
 
 
                 }

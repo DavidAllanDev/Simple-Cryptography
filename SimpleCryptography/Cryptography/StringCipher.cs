@@ -9,19 +9,16 @@ namespace SimpleCryptography.Cryptography
     {
         private string _defaultpassPhrase = "-";
 
-        public StringCipher(string DefaultpassPhrase) : this()
+        public StringCipher(string DefaultpassPhrase = "-")
         {
-            _defaultpassPhrase = DefaultpassPhrase;
-        }
-
-        public StringCipher()
-        {
-
+            _defaultpassPhrase = DefaultpassPhrase == null ? _defaultpassPhrase : DefaultpassPhrase;
         }
 
         public string Encrypt(string plainText, string passPhrase = null, int keysize = 128)
         {
             passPhrase = passPhrase == null ? _defaultpassPhrase : passPhrase;
+
+            ValidateInputTex(plainText);
 
             var saltStringBytes = GenerateRandomBits();
             var ivStringBytes = GenerateRandomBits();
@@ -36,13 +33,15 @@ namespace SimpleCryptography.Cryptography
 
             passPhrase = passPhrase == null ? _defaultpassPhrase : passPhrase;
 
+            ValidateInputTex(cipherText);
+
             var cipherTextBytesWithSaltAndIv = Convert.FromBase64String(cipherText);
             var saltStringBytes = cipherTextBytesWithSaltAndIv.Take(CalculateSize(keysize)).ToArray();
             var ivStringBytes = cipherTextBytesWithSaltAndIv.Skip(CalculateSize(keysize)).Take(CalculateSize(keysize)).ToArray();
             var cipherTextBytes = cipherTextBytesWithSaltAndIv.Skip((CalculateSize(keysize)) * 2).Take(cipherTextBytesWithSaltAndIv.Length - ((CalculateSize(keysize)) * 2)).ToArray();
-            var decriptor = new CipherDecriptor(FixedPassword);
+            var decriptor = new CipherDecriptor();
 
-            return decriptor.Decrypt(passPhrase, keysize, saltStringBytes, ivStringBytes, cipherTextBytes, CalculateSize(keysize), Iterations);
+            return decriptor.Decrypt(passPhrase, keysize, saltStringBytes, ivStringBytes, cipherTextBytes, CalculateSize(keysize), Iterations).Replace(FixedPassword, "");
         }
     }
 }
