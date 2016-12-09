@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Hashes\MD5\MD5HasherTest.cs" />
     <Compile Include="StringCipherConsumerTest.cs" />
     <Compile Include="StringCipherTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
