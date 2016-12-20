@@ -12,10 +12,12 @@ namespace SimpleCryptography.Hashes.MD5
 
         public string GetFileHash(string fileName)
         {
-            using (var fileStream = new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read, 8192))
-            {
-                return GetStringHash(Hasher().ComputeHash(fileStream));
-            }
+            return GetStringHash(Hasher().ComputeHash(GetFileStream(fileName)));
+        }
+
+        private FileStream GetFileStream(string fileName)
+        {
+            return new FileStream(fileName, FileMode.Open, FileAccess.Read, FileShare.Read, 8192);
         }
     }
 }
