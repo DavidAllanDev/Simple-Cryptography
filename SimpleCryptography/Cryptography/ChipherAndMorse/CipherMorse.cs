@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Morse = MorseCode.communication.MorseCode;
+﻿using Morse = MorseCode.communication.MorseCode;
 using MorseCode.protocol;
 
 namespace SimpleCryptography.Cryptography.ChipherAndMorse
