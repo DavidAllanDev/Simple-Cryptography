@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using System.IO;
+﻿using System.IO;
 
 namespace SimpleCryptography.Hashes.MD5
 {
