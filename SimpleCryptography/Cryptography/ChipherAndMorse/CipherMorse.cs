@@ -8,21 +8,33 @@ using MorseCode.protocol;
 
 namespace SimpleCryptography.Cryptography.ChipherAndMorse
 {
-    public sealed class CipherMorse
+    public sealed class CipherMorse : StringCipher
     {
-        public CipherMorse()
+        private Morse _morse;
+        public CipherMorse(IMorseType type)
+            :base("Morse")
         {
-
+            _morse = new Morse(type);
         }
 
-        public StringCipher Cipher()
+        public string Cipher(string morse)
         {
-            return new StringCipher();
+            return Encrypt(morse);
         }
 
-        public Morse MorseCode()
+        public string UnCipher(string cipherMorse)
         {
-            return new Morse(new AmericanMorse());
+            return Decrypt(cipherMorse);
+        }
+
+        public string Morse(string message)
+        {
+            return _morse.Morse(message);
+        }
+
+        public string UnMorse(string morse)
+        {
+            return _morse.UnMorse(morse);
         }
     }
 }
