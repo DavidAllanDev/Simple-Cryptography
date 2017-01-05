@@ -19,5 +19,17 @@ namespace UnitTest_SimpleCryptography
 
             Assert.AreEqual(message, original);
         }
+
+        [TestMethod]
+        public void canMorseAnCipherDirectly()
+        {
+            var cipherMorse = new CipherMorse(new AmericanMorse());
+
+            string message = "DAVID";
+            string morseCipher = cipherMorse.MorseCipher(message);
+            string original = cipherMorse.UnMorseCipher(morseCipher);
+
+            Assert.AreEqual(message, original);
+        }
     }
 }
