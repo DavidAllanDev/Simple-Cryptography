@@ -34,7 +34,7 @@ namespace SimpleCryptography.Cryptography.ChipherAndMorse
 
         public string MorseCipher(string message)
         {
-            return _morse.Morse(Encrypt(message));
+            return Encrypt(_morse.Morse(message));
         }
 
         public string UnMorseCipher(string morseCipherMessage)
