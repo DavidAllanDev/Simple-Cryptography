@@ -34,12 +34,12 @@ namespace SimpleCryptography.Cryptography.ChipherAndMorse
 
         public string MorseCipher(string message)
         {
-            return Encrypt(_morse.Morse(message));
+            return Encrypt(Morse(message));
         }
 
         public string UnMorseCipher(string morseCipherMessage)
         {
-            return _morse.UnMorse(Decrypt(morseCipherMessage));
+            return UnMorse(Decrypt(morseCipherMessage));
         }
     }
 }
