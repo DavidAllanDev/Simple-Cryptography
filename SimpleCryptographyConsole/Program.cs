@@ -6,8 +6,7 @@ namespace SimpleCryptographyConsole
     {
         static void Main(string[] args)
         {
-            string encryptedString = ProcessEncrytedPart();
-            ProcessDecryptesPart(encryptedString);
+            ProcessDecryptesPart(ProcessEncrytedPart());
         }
 
         private static void ProcessDecryptesPart(string encryptedString)
