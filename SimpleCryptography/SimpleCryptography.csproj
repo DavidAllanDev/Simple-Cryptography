@@ -53,6 +53,7 @@
     <Compile Include="Cryptography\StringCipher.cs" />
     <Compile Include="Hashes\MD5\MD5.cs" />
     <Compile Include="Hashes\MD5\MD5Hasher.cs" />
+    <Compile Include="PrimitiveCipher\Rot13.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
