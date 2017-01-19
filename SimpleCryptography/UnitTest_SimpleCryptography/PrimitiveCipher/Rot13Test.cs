@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using SimpleCryptography.PrimitiveCipher;
+﻿using SimpleCryptography.PrimitiveCipher;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
 
 namespace UnitTest_SimpleCryptography.PrimitiveCipher
 {

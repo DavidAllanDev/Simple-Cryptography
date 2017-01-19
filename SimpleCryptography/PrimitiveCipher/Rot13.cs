@@ -1,14 +1,13 @@
 ﻿namespace SimpleCryptography.PrimitiveCipher
 {
-    public class Rot13
+    public class Rot13 : IRotate
     {
-
         public string Transform(string value)
         {
             char[] array = value.ToCharArray();
             for (int i = 0; i < array.Length; i++)
             {
-                int number = (int)array[i];
+                int number = array[i];
 
                 if (number >= 'a' && number <= 'z')
                 {
