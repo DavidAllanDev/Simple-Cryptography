@@ -6,3 +6,6 @@ C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bi
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\obj\Debug\SimpleCryptographyConsole.csprojResolveAssemblyReference.cache
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\obj\Debug\SimpleCryptographyConsole.exe
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\obj\Debug\SimpleCryptographyConsole.pdb
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\MorseCode.dll
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptographyConsole.exe.CodeAnalysisLog.xml
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptographyConsole.exe.lastcodeanalysissucceeded

@@ -8,3 +8,6 @@ C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\obj\Debug\UnitTest_SimpleCryptography.pdb
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\SimpleCryptographyConsole.exe
 C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\SimpleCryptographyConsole.pdb
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\MorseCode.dll
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\UnitTest_SimpleCryptography.dll.CodeAnalysisLog.xml
+C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptography\UnitTest_SimpleCryptography\bin\Debug\UnitTest_SimpleCryptography.dll.lastcodeanalysissucceeded
