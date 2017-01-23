@@ -4,6 +4,11 @@
     {
         internal int baseNumber = 1;
 
+        public RotN(int number)
+        {
+            baseNumber = number;
+        }
+
         public string Transform(string value)
         {
             char[] array = value.ToCharArray();

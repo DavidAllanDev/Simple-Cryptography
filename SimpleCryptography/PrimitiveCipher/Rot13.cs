@@ -2,9 +2,9 @@
 {
     public class Rot13 :RotN, IRotate
     {
-        public Rot13()
+        public Rot13() : base(13)
         {
-            baseNumber = 13;
+            
         }
 
         public new string Transform(string value)
