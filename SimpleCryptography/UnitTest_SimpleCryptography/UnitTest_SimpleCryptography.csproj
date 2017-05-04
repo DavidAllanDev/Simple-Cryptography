@@ -57,6 +57,7 @@
     <Compile Include="CipherMorseTest.cs" />
     <Compile Include="Hashes\MD5\MD5HasherTest.cs" />
     <Compile Include="PrimitiveCipher\Rot13Test.cs" />
+    <Compile Include="PrimitiveCipher\RotNTest.cs" />
     <Compile Include="StringCipherConsumerTest.cs" />
     <Compile Include="StringCipherTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
