@@ -1,9 +1,0 @@
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptographyConsole.exe.config
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptographyConsole.exe
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptographyConsole.pdb
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptography.dll
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\SimpleCryptography.pdb
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\obj\Debug\SimpleCryptographyConsole.csprojResolveAssemblyReference.cache
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\obj\Debug\SimpleCryptographyConsole.exe
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\obj\Debug\SimpleCryptographyConsole.pdb
-C:\Users\david\Documents\GitHub\Simple-Cryptography\SimpleCryptographyConsole\bin\Debug\MorseCode.dll

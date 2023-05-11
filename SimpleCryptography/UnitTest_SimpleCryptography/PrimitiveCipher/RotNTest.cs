@@ -20,8 +20,8 @@ namespace UnitTest_SimpleCryptography.PrimitiveCipher
         [TestMethod]
         public void canRotToNAndRecoverValue()
         {
-            var N = 15;
-            var rot13 = new RotN(N);
+            var n = 13;
+            var rot13 = new RotN(n);
             var text = "David";
             var rot = rot13.Transform(text);
             var originalText = rot13.Transform(rot);
